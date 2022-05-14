@@ -1,0 +1,21 @@
+﻿@model IEnumerable<ADO_MVC.ViewModel.Department>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    @foreach (var dept in Model)
+    {
+<tr>
+    <td>@dept.Id</td>
+    <td>@dept.Name</td>
+</tr>
+    }
+</table>
+
